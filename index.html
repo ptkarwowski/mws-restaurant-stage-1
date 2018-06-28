@@ -1,5 +1,6 @@
+#add viewport
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content ="IE=edge">
@@ -18,18 +19,22 @@
   </header>
 
   <main id="maincontent">
-    <section id="map-container">
+    <section id="map-container" aria-labelledby="map-aria-sescription" role="application">
       <div id="map"></div>
     </section>
+    <label id="map-aria-description" class="map-aria-description">Google map application</label>
     <section>
       <div class="filter-options">
         <h2>Filter Results</h2>
+        <div class="filter-selects">
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
+        <label id="neighborhoods-label" class="filter-label">by neighborhoods</label>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
+        <label id="cuisines-label" class="filter-label">by cuisines</label>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
