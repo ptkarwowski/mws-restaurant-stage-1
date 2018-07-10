@@ -1,0 +1,26 @@
+/*#restaurant-list .restaurant-text-area {
+  display:flex;flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  max-height: 160px;
+
+}
+*/
+@media screen and (min-width: 0px)  {
+#restaurant-list li {
+  max-width: 100%;
+  }
+.filter-option {
+  height: 200px;
+}
+}
+@media only screen and (win-width: 700px) {
+  #restaurant-list li {
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+#restaurant-list li {
+  max-width: 33%;
+}
+}
