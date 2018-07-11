@@ -6,7 +6,7 @@
 
 }
 */
-@media screen and (min-width: 0px)  {
+/*@media screen and (min-width: 0px)  {
 #restaurant-list li {
   max-width: 100%;
   }
@@ -14,10 +14,24 @@
   height: 200px;
 }
 }
-@media only screen and (win-width: 700px) {
+*/
+@media (min-width: 0px) and (max-width: 376px){
+  #neighborhoods-label.filter-label {
+    margin-left:210px;
+  }
+  ul#reviews-list {
+    font-weight: bold;
+  }
+  #restaurant-name{
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+  }
+}
+@media only screen and (min-width: 700px) {
   #restaurant-list li {
     max-width: 50%;
   }
+
 }
 @media only screen and (min-width: 1000px) {
 #restaurant-list li {
